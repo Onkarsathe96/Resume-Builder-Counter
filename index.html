@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume | Cloud Engineer</title>
+    <!-- Importing Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --aws-navy: #232f3e;
+            --aws-orange: #ff9900;
+            --light-bg: #f4f7f9;
+            --text-dark: #1a1a1a;
+            --text-gray: #555;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 8px solid var(--aws-navy);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: var(--aws-navy);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: var(--aws-orange);
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: var(--text-gray);
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: var(--aws-orange);
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: var(--aws-navy);
+            border-left: 5px solid var(--aws-orange);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Skills Grid */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-card {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--aws-orange);
+        }
+
+        .skill-card i {
+            font-size: 24px;
+            color: var(--aws-navy);
+            margin-bottom: 10px;
+        }
+
+        .skill-card h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* Project & Experience */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .item-description {
+            font-size: 15px;
+            color: var(--text-gray);
+            margin-top: 5px;
+        }
+
+        /* Visitor Counter Footer */
+        .visitor-counter {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #888;
+        }
+
+        #counter {
+            font-weight: bold;
+            color: var(--aws-orange);
+        }
+
+        @media (max-width: 600px) {
+            .container { margin: 10px; padding: 20px; }
+            .item-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Onkar Sathe</h1>
+        <div class="subtitle">Cloud Engineer | Backend Developer</div>
+        <div class="contact-info">
+            <a href="mailto:onkarsathe0505@gmail.com"><i class="fas fa-envelope"></i> onkarsathe0505@gmail.com"</a>
+            <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/onkar-sathe/</a>
+            <a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a>
+            <span><i class="fas fa-location-dot"></i> Solapur, India</span>
+        </div>
+    </header>
+
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>
+            Motivated Engineer specializing in <strong>Cloud Infrastructure</strong> and <strong>Backend Development</strong>. 
+            Proficient in automating workflows with <strong>Python</strong>, building high-performance systems in <strong>C</strong>, 
+            and managing scalable environments on <strong>Linux</strong>. Certified AWS enthusiast with a focus on Serverless architectures.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fab fa-aws"></i>
+                <h3>AWS</h3>
+                <p style="font-size: 12px;">S3, Lambda, EC2, IAM</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p style="font-size: 12px;">Automation, Boto3, APIs</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-linux"></i>
+                <h3>Linux OS</h3>
+                <p style="font-size: 12px;">Bash, SSH, Admin</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>C Programming</h3>
+                <p style="font-size: 12px;">Data Structures, Memory</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Cloud Projects</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Serverless Cloud Resume (The Cloud Resume Challenge)</span>
+                <span>AWS & JavaScript</span>
+            </div>
+            <div class="item-description">
+                Built and hosted this digital resume on <strong>AWS S3</strong>. Implemented a live visitor counter using 
+                <strong>API Gateway</strong>, <strong>AWS Lambda</strong>, and <strong>DynamoDB</strong>. (Check the counter below!)
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <span>Linux System Monitor</span>
+                <span>Python & Bash</span>
+            </div>
+            <div class="item-description">
+                Developed a Python script that monitors CPU and RAM usage on a Linux server and sends automated alerts 
+                via SNS (Simple Notification Service) when thresholds are exceeded.
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>B.Tech in ECE with Minor in IT</span>
+                <span>2027</span>
+            </div>
+            <div class="item-description">[Walchand Institute of Technology Solapur]</div>
+        </div>
+    </section>
+
+    <!-- VISITOR COUNTER SECTION -->
+    <div class="visitor-counter">
+        <p><i class="fas fa-eye"></i> This AWS cloud-hosted resume has been viewed <span id="counter">0</span> times.</p>
+    </div>
+</div>
+
+<script>
+    // Replace the URL below with your actual API Gateway Invoke URL
+    const apiURL = 'https://n276d6x3za.execute-api.ap-south-2.amazonaws.com/prod/visit';
+
+    async function getVisitorCount() {
+        try {
+            const response = await fetch(apiURL);			
+            const data = await response.json();
+			console.log(data)
+            document.getElementById('counter').innerText = data.count;
+        } catch (error) {
+            console.log('Error fetching counter:', error);
+            document.getElementById('counter').innerText = '1'; // Fallback
+        }
+    }
+
+    getVisitorCount();
+</script>
+
+</body>
+</html>

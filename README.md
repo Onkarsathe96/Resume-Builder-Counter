@@ -104,3 +104,7 @@ Steps :
                     Add this JavaScript to your index.html file on your S3 resume.
 
 
+
+
+
+To access my project visit http://iot-page.s3-website.ap-south-2.amazonaws.com/

@@ -1,7 +1,3 @@
-# Resume-Builder-Counter
-
-# Resume-Builder-Counter
-
 To build a visitor counter, i have created a Serverless Stack. 
 Here is the architecture: 
                            S3 (Frontend) → JavaScript (Fetch API) → API Gateway → Lambda (Python/Node) → DynamoDB (Database)
